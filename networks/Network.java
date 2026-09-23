@@ -4,7 +4,7 @@ public abstract class Network {
     String userName;
     String password;
 
-        public boolean post(String message) {
+    public boolean post(String message) {
         if (logIn(this.userName, this.password)) {
             boolean result =  sendData(message.getBytes());
             logOut();

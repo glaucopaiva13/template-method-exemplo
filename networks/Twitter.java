@@ -6,6 +6,7 @@ public class Twitter extends Network {
         this.password = password;
     }
 
+    @Override
     public boolean logIn(String userName, String password) {
         System.out.println("\nChecando informações do usuário");
         System.out.println("Nome: " + this.userName);
@@ -18,6 +19,7 @@ public class Twitter extends Network {
         return true;
     }
 
+    @Override
     public boolean sendData(byte[] data) {
         boolean messagePosted = true;
         if (messagePosted) {
@@ -28,6 +30,7 @@ public class Twitter extends Network {
         }
     }
 
+    @Override
     public void logOut() {
         System.out.println("Usuário: '" + userName + "' deslogou do Twitter.");
     }
